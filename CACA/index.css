@@ -1,0 +1,156 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte do Google Fonts */
+    background-color: #2d2d2d; /* Cor de fundo mais escura */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; /* Cor do texto */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se não houver espaço */
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #444; /* Cor de fundo do contêiner */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    margin: 10px; /* Usando margens flexíveis */
+    flex: 1; /* Permite que o contêiner cresça e se encolha */
+    width: 90%; /* Define uma largura em porcentagem */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento acima dos vídeos */
+    flex-direction: column; /* Alinha os vídeos em coluna */
+}
+
+.video-container video {
+    max-width: 100%; /* Para que os vídeos não excedam a largura do contêiner */
+    height: auto; /* Mantém a proporção original do vídeo */
+    margin: 10px 0; /* Margem vertical entre vídeos */
+}
+
+/* Escondendo vídeos por padrão */
+.hidden {
+    display: none;
+}
+
+#video-spin {
+    width: 235px; /* Define o tamanho do vídeo de girar */
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+#video-win {
+    width: 200px; /* Define o tamanho do vídeo de ganhar */
+}
+
+#video-lose {
+    width: 300px; /* Define o tamanho do vídeo de perder */
+    border-radius: 10px;
+}
+
+h1 {
+    color: #FFD700; /* Dourado para o título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra no título */
+}
+
+#slots {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permite que os slots se movam para a próxima linha se não houver espaço */
+}
+
+.slot {
+    width: 100px; /* Pode ser ajustado com media queries */
+    height: 100px; /* Pode ser ajustado com media queries */
+    border: 2px solid #FFD700; /* Bordas douradas */
+    border-radius: 10px;
+    background-color: #f9c74f; /* Cor de fundo dos slots */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra mais forte */
+    margin: 10px; /* Usando margens flexíveis */
+}
+
+input[type="number"] {
+    padding: 15px;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color: #90be6d; /* Verde para o botão */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para o botão */
+}
+
+button:hover {
+    background-color: #43aa8b; /* Efeito de hover */
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Resultado em dourado */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra no resultado */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduz o tamanho da fonte do título */
+    }
+
+    .slot {
+        width: 80px; /* Ajusta a largura dos slots */
+        height: 80px; /* Ajusta a altura dos slots */
+    }
+
+    input[type="number"],
+    button {
+        font-size: 1.5em; /* Aumenta o tamanho da fonte para acessibilidade */
+    }
+
+    #result {
+        font-size: 1.5em; /* Aumenta o tamanho da fonte do resultado */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título */
+    }
+
+    input[type="number"],
+    button {
+        font-size: 1.2em; /* Ajusta o tamanho do botão e do input */
+    }
+}
