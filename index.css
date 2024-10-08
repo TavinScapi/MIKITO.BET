@@ -505,7 +505,7 @@ select {
 
 /* Banner */
 #banner {
-    background-image: url('/download\ \(1\).jpeg');
+    background-image: url('./download\ \(1\).jpeg');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
