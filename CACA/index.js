@@ -141,5 +141,5 @@ function hideAllVideos() {
 
 // Função para voltar ao início
 function resetGame() {
-    window.location.href = '../index.html'; // Redireciona para a página inicial
+    window.location.href = './index.html'; // Redireciona para a página inicial
 }
