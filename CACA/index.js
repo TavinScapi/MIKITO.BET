@@ -96,16 +96,16 @@ function checkResults(results, betAmount) {
     // Para os resultados iguais
     if (allEqual) {
         switch (results[0]) {
-            case '/mikitoFort.jpg':
+            case '../mikitoFort.jpg':
                 payout = betAmount * 5;
                 break;
-            case '/mikitoPOKER.jpg':
+            case '../mikitoPOKER.jpg':
                 payout = betAmount * 10;
                 break;
-            case '/mikitoROLETA.jpg':
+            case '../mikitoROLETA.jpg':
                 payout = betAmount * 20;
                 break;
-            case '/mikitoSLOT.jpg':
+            case '../mikitoSLOT.jpg':
                 payout = betAmount * 30;
                 break;
         }
@@ -141,5 +141,5 @@ function hideAllVideos() {
 
 // Função para voltar ao início
 function resetGame() {
-    window.location.href = '/index.html'; // Redireciona para a página inicial
+    window.location.href = '../index.html'; // Redireciona para a página inicial
 }
