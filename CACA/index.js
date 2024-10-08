@@ -1,8 +1,8 @@
 const icons = [
-    '/mikitoFort.jpg', 
-    '/mikitoPOKER.jpg', 
-    '/mikitoROLETA.jpg', 
-    '/mikitoSLOT.jpg'
+    '../mikitoFort.jpg', 
+    '../mikitoPOKER.jpg', 
+    '../mikitoROLETA.jpg', 
+    '../mikitoSLOT.jpg'
 ]; // Caminhos das imagens
 
 const slotElements = [
