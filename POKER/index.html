@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Poker Contra a Máquina</title>
+</head>
+<body>
+    <div class="mesa">
+        <h1>Poker Contra a Máquina</h1>
+        <div class="fichas">
+            <h2>Fichas do Jogador: <span id="fichasJogador">100</span></h2>
+            <h2>Fichas da Máquina: <span id="fichasMaquina">100</span></h2>
+        </div>
+        <div class="aposta">
+            <label for="valorAposta">Aposta: </label>
+            <input type="number" id="valorAposta" min="1" max="100" value="10">
+            <button id="apostar">Apostar</button>
+            <button id="desistir" disabled>Desistir</button>
+        </div>
+        <div class="cartas-comum">
+            <h3>Cartas em Comum:</h3>
+            <div id="cartasComum" class="cartas"></div>
+        </div>
+        <div class="cartas">
+            <h3>Suas Cartas:</h3>
+            <div class="carta" id="cartaJogador1">?</div>
+            <div class="carta" id="cartaJogador2">?</div>
+        </div>
+        <div class="cartas">
+            <h3>Cartas da Máquina:</h3>
+            <div class="carta" id="cartaMaquina1">?</div>
+            <div class="carta" id="cartaMaquina2">?</div>
+        </div>
+        <button id="darCarta" disabled>Dar Carta</button>
+        <h2 id="resultado"></h2>
+        <h2 id="vencedorFinal"></h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
