@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dardos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>🎯 Jogo de Dardos</h1>
+        <p>Teste sua precisão e acumule pontos! Mire no centro vermelho para mais pontos!</p>
+        
+        <div id="dartboard" aria-label="Alvo de dardos">
+            <div id="dart" class="dart" aria-label="Dardo em movimento"></div>
+        </div>
+        
+        <div class="controls">
+            <label for="level-selector">Nível de dificuldade:</label>
+            <select id="level-selector" aria-label="Selecione a dificuldade">
+                <option value="easy">Fácil</option>
+                <option value="medium">Médio</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <button id="launch-button" aria-label="Lançar o dardo">Lançar</button>
+            <button id="restart-button" aria-label="Recomeçar o jogo">Recomeçar</button>
+        </div>
+        
+        <div id="result" aria-live="polite"></div>
+        <div id="score">Pontuação: 0</div>
+        <div id="countdown" aria-live="polite"></div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

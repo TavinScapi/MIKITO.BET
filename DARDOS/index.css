@@ -1,0 +1,88 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #fff;
+}
+
+#game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+#dartboard {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background: radial-gradient(circle, #ff0000 10%, #ffffff 10%, #ffffff 70%, #00ff00 70%);
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #444;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#dart {
+    width: 15px;
+    height: 15px;
+    background-color: #ffeb3b;
+    border: 2px solid #ff9800;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 7.5px);
+    top: calc(50% - 7.5px);
+    transition: top 0.1s, left 0.1s;
+    z-index: 10;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+select, button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #f200ff;
+}
