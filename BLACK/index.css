@@ -1,0 +1,22 @@
+/* Estilo para o Blackjack */
+.cards {
+    display: flex;
+    margin: 20px 0;
+}
+
+#player-hand, #dealer-hand {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}

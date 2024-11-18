@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKITO.BET - Blackjack</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MIKITO.BET - Blackjack</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#wallet">Carteira</a></li>
+                <li><a href="#support">Suporte</a></li>
+                <li><a href="#profile">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blackjack Game -->
+    <section id="blackjack">
+        <h2>Blackjack</h2>
+        <div id="player-hand">
+            <h3>Sua Mão: <span id="player-score">0</span></h3>
+            <div class="cards" id="player-cards"></div>
+        </div>
+        <div id="dealer-hand">
+            <h3>Dealer: <span id="dealer-score">0</span></h3>
+            <div class="cards" id="dealer-cards"></div>
+        </div>
+        <button id="hit-btn">Pedir Carta</button>
+        <button id="stand-btn">Parar</button>
+        <p id="result"></p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
