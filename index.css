@@ -655,6 +655,14 @@ select {
     font-size: 14px;
 }
 
+
+.popup-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
