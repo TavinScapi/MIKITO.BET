@@ -128,7 +128,10 @@
     </section>
         <!-- Seção de Jogos de Bar -->
     <section id="jogos" class="flexbox-col">
-      <h2>Nossos Jogos de Bar</h2>
+      <h2>Nossos Jogos de Bar
+        <!-- Botão de Pop-Up para Recomendações de Música -->
+        <button id="music-recommendations-btn" class="btn-recommendations">Ouça Jogando |🎵</button>
+      </h2>
       <div class="jogos-container flexbox">
         <div class="jogo-card">
           <a href="./TRUCO/index.html"> <!-- Link para a página do jogo de Truco -->
@@ -161,6 +164,113 @@
         </div>
       </div>
     </section>
+
+      <!-- Pop-Up de Recomendações de Música -->
+    <div id="music-popup" class="music-popup">
+      <div class="popup-content">
+        <h3>Recomendações de Playlists</h3>
+        <img src="MIKI.MUSICA.png" alt="Imagem relacionada" class="popup-image">
+        <ul>
+          <!-- Playlist 1 -->
+          <li><a href="https://open.spotify.com/playlist/6j9jCuxG4Sfj6uVy5WOHv6?si=1ea0ec9f1da94ab0" target="_blank">Só Modão Antigo</a></li>
+          <!-- Playlist 2 -->
+          <li><a href="https://open.spotify.com/playlist/4lWVUTe6KlN2sfxSTfFrnW?si=681fed486312464d" target="_blank">Seresta De Caminhoneiro</a></li>
+          <!-- Playlist 3 -->
+          <li><a href="https://open.spotify.com/playlist/7f9u1ejccTHXxg9bShaGxV?si=befcb355a7e44ce0" target="_blank">Pablo (Não vai chorar ein!)</a></li>
+          <!-- Playlist 4 -->
+          <li><a href="https://open.spotify.com/playlist/2idVCm9WX50irPcv5kvjc0?si=ecdc07d6c16a40eb" target="_blank">Reggae Do Maranhão</a></li>
+        </ul>
+        <button id="close-popup" class="close-popup">Fechar</button>
+      </div>
+    </div>
+    
+    
+    <!-- Estilos CSS para o Pop-Up -->
+    <style>
+      .btn-recommendations {
+        background-color: #ff6f61;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+      .btn-recommendations:hover {
+        background-color: #ff4f41;
+      }
+
+      .music-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .popup-content h3 {
+        margin-bottom: 20px;
+      }
+
+      .popup-content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .popup-content li {
+        margin-bottom: 10px;
+      }
+
+      .popup-content li a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .popup-content li a:hover {
+        text-decoration: underline;
+      }
+
+      .close-popup {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .close-popup:hover {
+        background-color: #0056b3;
+      }
+    </style>
+
+    <!-- Script para controlar o pop-up -->
+    <script>
+      // Mostrar o pop-up ao clicar no botão
+      document.getElementById('music-recommendations-btn').addEventListener('click', function () {
+        document.getElementById('music-popup').style.display = 'flex';
+      });
+
+      // Fechar o pop-up
+      document.getElementById('close-popup').addEventListener('click', function () {
+        document.getElementById('music-popup').style.display = 'none';
+      });
+    </script>
   </main>
 
   <!-- Footer -->
